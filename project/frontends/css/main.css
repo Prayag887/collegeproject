@@ -60,7 +60,7 @@
  section{
      position:relative;
      width:100%;
-     height:100vh;
+     height:110vh;
      /* padding: 50px; */
      display: flex;
      justify-content: left;
@@ -120,6 +120,7 @@
 .sec{
     position: relative;
     padding: 100px;
+    padding-bottom: 40px !important;
     background: #1c0522;
 }
 
@@ -211,3 +212,84 @@ section #card{
     background-color: transparent;
 
 }
+
+.cloud1{
+    margin-right: 100px;
+}
+
+
+
+
+
+
+@keyframes moonAnimation {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-250px, 275px);
+    }
+  }
+  
+  /* @keyframes mountainsBehindAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  } */
+  
+  @keyframes starsAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(190px);
+    }
+  }
+  
+
+  @keyframes cloudAnimation1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(250px, -75px);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes cloudAnimation2 {
+    0% {
+      transform: translateX(-750px);
+    }
+    100% {
+      transform: translateX(590px);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  .cloud2 {
+    animation: cloudAnimation2 15s ease-in-out forwards;
+  }
+  
+  .cloud1 {
+    animation: cloudAnimation1 15s ease-in-out forwards;
+  }
+
+
+  .moon {
+    animation: moonAnimation 25s forwards alternate; 
+  }
+  
+  /* .mountains_behind {
+    animation: mountainsBehindAnimation 15s infinite alternate; 
+  } */
+  
+  .stars {
+    animation: starsAnimation 15s ease-in forwards; 
+  }
+  
