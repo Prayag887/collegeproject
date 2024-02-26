@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input Form</title>
+</head>
+<body>
+    <h1>Enter Renewable Energy Data</h1>
+    <form action="/submit" method="post">
+        <label for="entity">Entity:</label>
+        <input type="text" id="entity" name="entity" required><br><br>
+        
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" required><br><br>
+        
+        <label for="hydro">Electricity from Hydro (TWh):</label>
+        <input type="number" id="hydro" name="hydro" required><br><br>
+        
+        <label for="wind">Electricity from Wind (TWh):</label>
+        <input type="number" id="wind" name="wind" required><br><br>
+        
+        <label for="solar">Electricity from Solar (TWh):</label>
+        <input type="number" id="solar" name="solar" required><br><br>
+        
+        <label for="bioenergy">Other Renewables including Bioenergy (TWh):</label>
+        <input type="number" id="bioenergy" name="bioenergy" required><br><br>
+        
+        <label for="total">Total (TWh):</label>
+        <input type="number" id="total" name="total" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

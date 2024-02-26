@@ -213,11 +213,10 @@ section #card{
 
 }
 
-.cloud1{
-    margin-right: 100px;
+.active {
+  font-weight: bold;
+  color: blanchedalmond;
 }
-
-
 
 
 
@@ -245,7 +244,7 @@ section #card{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(190px);
+      transform: translateX(90px);
     }
   }
   
@@ -282,11 +281,11 @@ section #card{
 
 
   .moon {
-    animation: moonAnimation 25s forwards alternate; 
+    animation: moonAnimation 35s forwards alternate; 
   }
   
   /* .mountains_behind {
-    animation: mountainsBehindAnimation 15s infinite alternate; 
+    animation: mountainsBehindAnimation 15s ease-in forwards; 
   } */
   
   .stars {
